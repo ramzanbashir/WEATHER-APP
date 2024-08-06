@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://kit.fontawesome.com/600a1e03a3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="./images/clouds.png">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="main ">
+        <div class="container ">
+
+        
+        <div class="search-div">
+            <div class="input-div">
+                <input id="input" class="search" placeholder="Search" type="text">
+                <div onclick="searching()" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+        </div>
+        <div class="information">
+            <div id="time" class="time"></div>
+            <div class="row d-flex upper">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-6">
+                    <div id="cityName" class="cityName">city</div>
+                    <div id="temp" class="temp">00</div>
+                </div>
+                <div class="image-div col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-6">
+                    <div id="image" class="image "></div>
+                </div>
+            </div>
+            <div class="row d-flex center-part">
+                <div id="" class=" box col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-3">
+                    <div class="box1 d-flex">
+                        
+                        <div class="margin font"><i class="fa-solid fa-temperature-high"></i></div>
+                        <div class="margin font">Feel Like:</div>
+                        <div class="margin font" id="feel"></div>
+                    </div>
+                </div>
+                <div id="" class=" box col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-3">
+                    <div class="box1 d-flex">
+
+                        <div class="margin font"><i class="fa-solid fa-droplet"></i></div>
+                        <div class="margin font">Humidity:</div>
+                        <div class="margin font" id="humidity"></div>
+                    </div>
+                </div>
+                <div id="" class=" box col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-3">
+                    <div class="box1 d-flex">
+
+                        <div class="margin font"><i class="fa-solid fa-wind"></i></div>
+                        <div class="margin font">Wind:</div>
+                        <div class="margin font" id="airpressure"></div>
+                    </div>
+                </div>
+                <div id="" class=" box col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 col-xxl-3">
+                   <div class="box1 d-flex">
+
+                       <div class="margin font last-div" class="conditionOfWeather" id="conditionOfWeather">
+                           <i class="fa-regular fa-sun"></i>
+                        </div>
+                        <div class="margin font">Weather:</div>
+                        <div class="margin font" id="weatherType"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
